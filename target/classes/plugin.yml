@@ -1,0 +1,4 @@
+name: NTEnchanting
+main: com.makotomiyamoto.ntenchanting.Main
+version: 1.0.0
+api-version: '1.14'
