@@ -1,6 +1,6 @@
 package com.makotomiyamoto.ntenchanting.listener;
 
-import com.makotomiyamoto.ntenchanting.gui.EnchantingInterfaceDefault;
+import com.makotomiyamoto.ntenchanting.gui.EnchantingInterface;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -8,7 +8,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-public final class EnchantingTableClickListener implements Listener {
+public final class EnchantingTableOpenListener implements Listener {
 
     @SuppressWarnings("unused")
     @EventHandler
@@ -27,7 +27,11 @@ public final class EnchantingTableClickListener implements Listener {
             return;
         }
         event.setCancelled(true);
-        player.openInventory(new EnchantingInterfaceDefault(player).getInventory());
+        try {
+            player.openInventory(new EnchantingInterface(player).getInventory());
+        } catch (ArrayIndexOutOfBoundsException e) {
+            player.sendMessage(ChatColor.RED + "You cannot enchant " + player.getInventory().getItemInMainHand().getType());
+        }
 
     }
 

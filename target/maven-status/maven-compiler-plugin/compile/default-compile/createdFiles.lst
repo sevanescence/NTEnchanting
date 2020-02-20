@@ -1,3 +1,5 @@
+com\makotomiyamoto\ntenchanting\evaluation\Eval.class
 com\makotomiyamoto\ntenchanting\gui\EnchantingInterfaceDefault.class
+com\makotomiyamoto\ntenchanting\gui\EnchantingInterfaceDefault$1.class
 com\makotomiyamoto\ntenchanting\listener\EnchantingTableClickListener.class
 com\makotomiyamoto\ntenchanting\Main.class
