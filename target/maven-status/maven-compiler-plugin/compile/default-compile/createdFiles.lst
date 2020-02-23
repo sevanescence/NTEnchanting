@@ -1,5 +1,7 @@
+com\makotomiyamoto\ntenchanting\evaluation\TableUpdateHandler.class
+com\makotomiyamoto\ntenchanting\listener\EnchantingTableOpenListener.class
+com\makotomiyamoto\ntenchanting\Data.class
+com\makotomiyamoto\ntenchanting\listener\EnchantingTableInteractListener.class
+com\makotomiyamoto\ntenchanting\gui\EnchantingInterface.class
 com\makotomiyamoto\ntenchanting\evaluation\Eval.class
-com\makotomiyamoto\ntenchanting\gui\EnchantingInterfaceDefault.class
-com\makotomiyamoto\ntenchanting\gui\EnchantingInterfaceDefault$1.class
-com\makotomiyamoto\ntenchanting\listener\EnchantingTableClickListener.class
 com\makotomiyamoto\ntenchanting\Main.class
