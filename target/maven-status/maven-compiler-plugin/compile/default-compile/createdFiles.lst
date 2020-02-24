@@ -1,5 +1,6 @@
 com\makotomiyamoto\ntenchanting\evaluation\TableUpdateHandler.class
 com\makotomiyamoto\ntenchanting\listener\EnchantingTableOpenListener.class
+com\makotomiyamoto\ntenchanting\listener\ItemMountedListener.class
 com\makotomiyamoto\ntenchanting\Data.class
 com\makotomiyamoto\ntenchanting\listener\EnchantingTableInteractListener.class
 com\makotomiyamoto\ntenchanting\gui\EnchantingInterface.class

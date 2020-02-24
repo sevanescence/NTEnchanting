@@ -36,19 +36,15 @@ public final class EnchantingTableInteractListener implements Listener {
             if (itemInSlot != null) {
                 if (event.getSlot() != Data.ITEM_SLOT && windowClicked.equals(view.getTopInventory())) {
                     event.setCancelled(true);
-                    return;
-                }
-                if (windowClicked.equals(view.getBottomInventory())) {
+                } else if (windowClicked.equals(view.getBottomInventory())) {
                     event.setCancelled(true);
                 }
-                return;
-            }
-            if (windowClicked.equals(view.getTopInventory())) {
+            } else if (windowClicked.equals(view.getTopInventory())) {
                 event.setCancelled(true);
                 return;
             }
         }
-        if (windowClicked.equals(view.getTopInventory()) && event.getSlot() != Data.ITEM_SLOT) {
+        if (windowClicked.equals(view.getTopInventory()) && event.getRawSlot() != Data.ITEM_SLOT) {
             event.setCancelled(true);
         }
     }
