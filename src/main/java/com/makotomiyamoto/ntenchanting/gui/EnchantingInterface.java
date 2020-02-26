@@ -26,9 +26,6 @@ public final class EnchantingInterface implements InventoryHolder {
         for (int value : Data.BORDER) {
             gui.setItem(value, b);
         }
-        for (int value : Data.ENCH_SLOTS) {
-            gui.setItem(value, c);
-        }
     }
 
     @Override

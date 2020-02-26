@@ -1,6 +1,5 @@
 package com.makotomiyamoto.ntenchanting.evaluation;
 
-import com.makotomiyamoto.ntenchanting.Data;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
@@ -11,9 +10,7 @@ public class TableUpdateHandler {
     public TableUpdateHandler(Player player) {
         this.player = player;
     }
-    public void render(Inventory inventory, ItemStack newItem) {
-        inventory.setItem(Data.ITEM_SLOT, newItem);
+    public void render(Inventory inventory) {
         inventory.setItem(12, new ItemStack(Material.RED_STAINED_GLASS_PANE));
-        player.updateInventory();
     }
 }

@@ -9,7 +9,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 public final class EnchantingTableOpenListener implements Listener {
-
     @SuppressWarnings("unused")
     @EventHandler
     public void onClick(PlayerInteractEvent event) {
